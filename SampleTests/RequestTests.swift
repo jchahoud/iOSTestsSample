@@ -21,14 +21,10 @@ class RequestTests: XCTestCase {
     }
 
     func testLoginWithSucess() {
-        serviceMock.loginWithSuccess = true
-        let userLoggedIn = request.login(email: "suzy@email.com", password: "123456")
-        XCTAssertTrue(userLoggedIn)
+
     }
 
     func testLoginWithError() {
-        serviceMock.loginWithSuccess = false
-        let userLoggedIn = request.login(email: "user@email.com", password: "123456")
-        XCTAssertFalse(userLoggedIn)
+
     }
 }
